@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Daniel's Portfolio</title>
+    <meta name="description" content="Fuzzy medical image segmentation - Daniel Krasnov">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../assets/images/1311.png" />
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <script defer src="../js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Daniel's Portfolio</span>
+      </a>
+      <a class="button" href="mailto:danielakrasnov@outlook.com">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Fuzzy Medical Image Segmentation</div>
+
+        <div class="body-text">
+          This project performs automated, uncertainty aware mammogram segmetation using fuzzy c means clustering. It combines fuzzy clustering with with a covaraince based distance metric and various centroid initialization algorithms to produce robust tumor segmentations and pixel level uncertainty estimates. This approach is useful for faster, more interpretable pre reads of mammograms. Published in <em>Entropy</em> (DOI: 10.3390/e25071021). <a href="https://doi.org/10.3390/e25071021" target="_blank" rel="noopener noreferrer">Read the paper</a>.
+        </div>
+
+        <img class="project-header-image" src="../assets/images/entropy.png" alt="Entropy publication cover">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <strong>Keywords:</strong> <strong>Computer Vision</strong>, <strong>Fuzzy Clustering</strong>, <strong>Medical Imaging</strong>
+          </div>
+
+          <div class="body-text">
+            Medical image segmentation supports many clinical workflows but is sensitive to initialization and model assumptions. This project improves robustness and interpretability by using fuzzy c means (FCM) to assign soft membership scores to each pixel. It then augments FCM with a Mahalanobis distance that accounts for local covariance and uses several centroid initalization algorithms: firefly, genetic algorithm, and biogeography based optimization, to avoid poor local minima. Pixel membership maps provide an interpretable measure of uncertainty that highlights ambiguous regions.
+          </div>
+
+          <div class="body-text">
+            The implementation is written in Python and optimized with Numba for parallelism. It produces both hard segmented images and membership weighted visualizations. The code and install instructions are on GitHub: <a href="https://github.com/Danyulll/FuzzyPySeg" target="_blank" rel="noopener noreferrer">github.com/Danyulll/FuzzyPySeg</a>. Key results showed improved boundary delineation and more consistent convergence when using Mahalanobis distance with centroid initialization.
+          </div>
+
+          <div class="body-text">
+            For a more detailed explanation of the project please see the notebook here (TODO)
+          </div>
+
+          <div class="body-text">
+            <strong>Tech stack and methods</strong>:
+            <ul>
+              <li><strong>Technologies:</strong> Python 3.x, NumPy, SciPy, Pillow (PIL), Numba, logging</li>
+              <li><strong>Algorithms:</strong> Fuzzy C Means (Euclidean and Mahalanobis), Firefly algorithm, Genetic Algorithm, Biogeography Based Optimization (BBO)</li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/project-1-img-1.png" class="gallery-image" alt="Code snippet">
+            <span class="image-caption">This image compares the unsegmented image (left) with the Fuzzy C-Means segmentation (right) using the Mahalanobis distance and the Biogeography Based Optimizationcentroid initialization algorithm. We can clearly see a mass in the middle of the breast has been highlighted.</span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/project-1-img-2.png" class="gallery-image" alt="Input mammogram">
+            <span class="image-caption">Here we see the algorithm recover correctly segmented shaped in the presence of Gaussian Noise. The initial image (left) should noisy shapes and the segmented image (right) shows correct recovery of shapes using FCM with a Mahalanobis distance metric and Genetic Algorithm centroid initialization.
+
+            </span>
+          </div>
+
+         
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth" rel="noopener noreferrer">
+        <img src="../assets/icons/instagram.svg" class="footer-icon" alt="instagram icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth" rel="noopener noreferrer">
+        <img src="../assets/icons/twitter.svg" class="footer-icon" alt="twitter icon"/>
+      </a>
+
+      <a class="icon-link" href="mailto:danielakrasnov@outlook.com">
+        <img src="../assets/icons/mail.svg" class="footer-icon" alt="mail icon"/>
+      </a>
+    </div>
+
+  </body>
+</html>

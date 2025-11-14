@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Daniel's Portfolio</title>
+    <meta name="description" content="Biochemical Spectral Identification - Daniel Krasnov">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../assets/images/1311.png" />
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <script defer src="../js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Daniel's Portfolio</span>
+      </a>
+      <a class="button" href="mailto:danielakrasnov@outlook.com">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">Biochemical Spectral Identification</div>
+
+        <div class="body-text">
+          Raman spectroscopy provides a unique biochemical fingerprint, but each measurement is inherently a mixture of multiple underlying chemical spectra. This project uses Bayesian positive source separation to unmix those constituent signals and quantify the uncertainty in each recovered component. The result is a more reliable and interpretable approach for identifying biochemical composition from complex Raman data. This work was part of my honours thesis for my undergraduate degree in Data Science at the University of British Columbia. Published in UBC Open Collections. <a href="https://open.library.ubc.ca/soa/cIRcle/collections/undergraduateresearch/52966/items/1.0443983" target="_blank" rel="noopener noreferrer">Read the thesis</a>.</a>.
+        </div>
+
+        <img class="project-header-image" src="../assets/images/project-2-img-1.PNG" alt="Entropy publication cover">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">
+            <strong>Keywords:</strong> <strong>Bayesian Statistics</strong>, <strong>Matrix Factorization</strong>, <strong>Chemometrics</strong>
+          </div>
+
+          <div class="body-text">
+            Raman spectra capture the unique vibrational “fingerprints” of chemical compounds, allowing researchers to non-invasively identify the molecules present in a sample. Because many real-world materials contain multiple overlapping signals, interpreting these spectra is challenging and often requires statistical or machine learning methods to separate out the underlying chemical components.
+          </div>
+
+          <div class="body-text">
+            This work develops a probabilistic approach for decomposing complex Raman spectra by combining group and basis restricted non-negative matrix factorization with Bayesian positive source separation. The method uses prior information to guide the model toward physically meaningful solutions while also estimating uncertainty, something standard NMF methods cannot provide. I conducted a sensitivity analysis to understand how prior choices affect performance, and then applied the model to real biochemical Raman data, showing that it accurately recovers the constituent signals along with credible intervals for their estimated contributions.
+          </div>
+
+          <div class="body-text">
+            For a more detailed explanation of the project please see the notebook here (TODO)
+          </div>
+
+          <div class="body-text">
+            <strong>Tech stack and methods</strong>:
+            <ul>
+              <li><strong>Technologies:</strong> R, JAGS, coda, ggplot2, tidyr</li>
+              <li><strong>Algorithms:</strong> Group-and-Basis-Restricted Nonnegative Matrix Factorization (GBR-NMF), Bayesian Positive Source Separation (BPSS)</li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/project-2-img-2.png" class="gallery-image" alt="Code snippet">
+            <span class="image-caption">
+              We looked at 5 mixtures of biochemicals with varying concentrations of each. The four chemicals were Citric Acid, Glucose, Glycine, and Serine, and each took turns being the majority chemical.
+            </span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/project-2-img-3.PNG" class="gallery-image" alt="Input mammogram">
+            <span class="image-caption">
+              Here are the true Raman spectra for each of the four chemicals.
+            </span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/project-2-img-4.PNG" class="gallery-image" alt="Input mammogram">
+            <span class="image-caption">
+              Here are the 95% credible intervals for the recovered spectra for each of the four chemicals.
+            </span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/project-2-img-5.PNG" class="gallery-image" alt="Input mammogram">
+            <span class="image-caption">
+              Here are the 95% credible intervals for the concentrations of each chemical in one mixture.
+            </span>
+          </div>
+
+         
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth" rel="noopener noreferrer">
+        <img src="../assets/icons/instagram.svg" class="footer-icon" alt="instagram icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth" rel="noopener noreferrer">
+        <img src="../assets/icons/twitter.svg" class="footer-icon" alt="twitter icon"/>
+      </a>
+
+      <a class="icon-link" href="mailto:danielakrasnov@outlook.com">
+        <img src="../assets/icons/mail.svg" class="footer-icon" alt="mail icon"/>
+      </a>
+    </div>
+
+  </body>
+</html>

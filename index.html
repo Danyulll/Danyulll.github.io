@@ -29,9 +29,9 @@
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
+        <span class="nav-title">Daniel's Portfolio</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <a class="button" href="mailto:danielakrasnov@outlook.com">
           <span class="button-text">Contact Me</span>
         </a>
       </a>
@@ -65,8 +65,8 @@
           -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <span class="main-title">Hey, I'm Daniel.</span>
+              <div class="body-text">I am a machine learning researcher focused on developing and applying state-of-the-art techniques to address real-world challenges.</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
@@ -83,17 +83,18 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
       <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
+        <span class="subheader-text">About Me</span>
         <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">I am a machine learning researcher based in Vancouver, British Columbia, with a Master of Science in Statistics from McGill University and an Honours Bachelor of Science in Data Science from the University of British Columbia. My research focuses on Bayesian statistics and statistical machine learning, and I have worked in several applied domains including medical imaging/physics, curriculum design, natural language processing, and anomaly detection. You can browse my projects to see examples of this work.</div>
+          <div class="body-text">I am passionate about education and scientific communication. Over the years, I have worked as a tutor and teaching assistant, and I maintain a blog where I post new teaching materials and tutorials each week. I also developed and published an R package that supports data-driven curriculum design, which has been downloaded more than 5,000 times.</div>
+           <div class="body-text">I am currently open to both full-time and freelance opportunities. I am interested in solving challenging and impactful real-world problems. If you have something in mind, please feel free to contact me.</div>
         </div>
       </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+        <span class="subheader-text">My Projects</span>
 
         <div class="projects-container">
           <!-- 
@@ -111,6 +112,7 @@
                 <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
               </a>
             </div>
+            
 
             - To add a project to the this area, copy the above, paste it below this comment, and change the following:
                 - IMAGE_NAME: the name of the image file in assets/images
@@ -118,36 +120,82 @@
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
+
+               <div class="project-card">
+              <img src="./assets/images/entropy.png" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Fuzzy Medical Image Segmentation</div>
+                <div class="body-text project-card-text">This project showcases a medical image segmentation system that combines fuzzy clustering with centroid initialization techniques to separate structures, such as tumors, in mammography data. Using soft clustering allows us to quantify the uncertainty in pixel assignments, providing more reliable and interpretable segmentations.</div>
+              </div>
+              <a class="button" href="./project-pages/project-1.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+          <div class="project-card">
+            <img src="./assets/images/project-2-img-1.PNG" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Spectral Biochemical Identification</div>
+              <div class="body-text project-card-text">Raman spectra act as a biochemical fingerprint comprised of overlapping component signals. This project separates those blended signatures using a Bayesian approach to matrix factorization. This produces clear component spectra along with uncertainty estimates for reliable chemical identification.  
+
+              </div>
+            </div>
+            <a class="button" href="./project-pages/project-2.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
           <div class="project-card">
             <img src="./assets/images/desktop.jpeg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Functional Anomaly Detection</div>
+              <div class="body-text project-card-text">A small description about the project goes here. This is a placeholder project that you can customize with your own content.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./project-pages/project-3.html">
               <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG SECTION -->
+      <div id="blog-section">
+        <span class="subheader-text">Blog</span>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Understanding Bayesian Statistics</div>
+              <div class="body-text project-card-text">A comprehensive guide to Bayesian inference and its applications in modern machine learning. Learn how to apply Bayesian methods to real-world problems.</div>
+            </div>
+            <a class="button" href="./blog-pages/article-1.html">
+              <span class="button-text">Read Article</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
             <img src="./assets/images/code.jpeg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Deep Learning Fundamentals</div>
+              <div class="body-text project-card-text">An introduction to neural networks, backpropagation, and the building blocks of deep learning architectures. Perfect for beginners.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
+            <a class="button" href="./blog-pages/article-2.html">
+              <span class="button-text">Read Article</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
             <img src="./assets/images/sketchbook.jpeg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Data-Driven Curriculum Design</div>
+              <div class="body-text project-card-text">Exploring how data science can revolutionize education through personalized learning paths and adaptive curriculum development.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
+            <a class="button" href="./blog-pages/article-3.html">
+              <span class="button-text">Read Article</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
@@ -178,7 +226,7 @@
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <a class="icon-link" href="mailto:danielakrasnov@outlook.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
