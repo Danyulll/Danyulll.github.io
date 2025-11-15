@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Daniel's Portfolio</title>
-    <meta name="description" content="Functional Anomaly Detection - Daniel Krasnov" />
+    <meta charset="utf-8">
+    <title>Bayesian Functional Anomaly Detection</title>
+    <meta name="description" content="Master's thesis — Bayesian nonparametric detection of anomalies in multivariate functional data (Daniel Krasnov)">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../assets/images/1311.png" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/typography.css" />
-    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
     <script defer src="../js/script.js"></script>
   </head>
 
@@ -28,13 +28,13 @@
 
       <!-- PROJECT HEADER -->
       <div id="project-header">
-        <div class="main-title">Functional Anomaly Detection</div>
+        <div class="main-title">Bayesian Nonparametric Detection of Anomalies in Multivariate Functional Data</div>
 
         <div class="body-text">
-          A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.
+          This project was my master's thesis where I developed a Bayesian nonparametric model to detect anomalies in multivariate functional data by representing each observation as arising from an infinite mixture of multi-output Gaussian processes. The approach uses wavelet-based mean modelling, an Intrinsic Coregionalization Model (ICM) for cross-output dependence, slice sampling for posterior inference, and a Carlin–Chib product-space move for automatic kernel selection. The method identifies anomalies as small or rare mixture components and is validated through simulations and three real-world datasets.
         </div>
 
-        <img class="project-header-image" src="../assets/images/desktop.jpeg" alt="Project image">
+        <img class="project-header-image" src="../assets/images/project-3-img-2.png" alt="Thesis cover: Bayesian nonparametric detection of anomalies">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -42,28 +42,33 @@
         <div class="subheader-text">Project Details</div>
         <div class="project-details-content">
           <div class="body-text">
-            <strong>Keywords:</strong> <strong>Keyword 1</strong>, <strong>Keyword 2</strong>, <strong>Keyword 3</strong>
+            <strong>Keywords:</strong> <strong>Bayesian Nonparametrics</strong>, <strong>Functional Data Analysis</strong>, <strong>Anomaly Detection</strong>, <strong>Gaussian Processes</strong>, <strong>Wavelets</strong>, <strong>Dirichlet Process</strong>
           </div>
 
           <div class="body-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.
+             The model represents functional observations using an infinite mixture of Intrinsic Coregionalization Models (ICMs). Cluster-specific means are estimated in a wavelet basis with Besov-style shrinkage, while residual cross-output dependence is modelled by an ICM. The Dirichlet process (inferred via slice sampling) removes the need to pre-specify the number of clusters, and a Carlin–Chib product-space move allows automatic selection among covariance kernels.
           </div>
 
           <div class="body-text">
-            Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.
+            The thesis details algorithmic approaches for efficient posterior computation, including an eigen-decomposition trick for multi-output likelihood evaluation and practical tuning strategies for the MCMC. Simulation studies quantify detection accuracy (precision/recall/F1) across anomaly types (isolated, shape, magnitude), and three real-data applications illustrate practical performance.
           </div>
 
           <div class="body-text">
-            For a more detailed explanation of the project please see the notebook here (TODO)
+            The implementation includes R and Python code, reproducible experiments, and notebooks. Key results show high recall for subtle anomalies on smooth datasets and robust performance on heterogeneous real-world signals.
+          </div>
+
+          <div class="body-text">
+            For full details and reproducible code, see the  TODO
           </div>
 
           <div class="body-text">
             <strong>Tech stack and methods</strong>:
             <ul>
-              <li><strong>Technologies:</strong> Technology 1, Technology 2, Technology 3</li>
-              <li><strong>Algorithms:</strong> Algorithm 1, Algorithm 2, Algorithm 3</li>
+              <li><strong>Technologies:</strong> Julia</li>
+              <li><strong>Algorithms:</strong> Gaussian processes (ICM), Dirichlet process mixtures, slice sampling, Carlin–Chib product-space moves, Besov priors, wavelet shrinkage</li>
             </ul>
           </div>
+
 
         </div>
       </div>
@@ -74,14 +79,16 @@
         <div class="project-gallery-content">
 
           <div class="gallery-image-container half-width">
-            <img src="../assets/images/code.jpeg" class="gallery-image" alt="Gallery image 1">
-            <span class="image-caption">Give your image a caption. People love context.</span>
+            <img src="../assets/images/project-3-img-1.png" class="gallery-image" alt="Simulated anomalies example">
+            <span class="image-caption">TODO</span>
           </div>
 
           <div class="gallery-image-container half-width">
-            <img src="../assets/images/sketchbook.jpeg" class="gallery-image" alt="Gallery image 2">
-            <span class="image-caption">Give your image a caption. People love context.</span>
+            <img src="../assets/images/project-3-img-2.png" class="gallery-image" alt="Real-data classification">
+            <span class="image-caption">TODO</span>
           </div>
+
+         
 
         </div>
       </div>
@@ -105,4 +112,3 @@
 
   </body>
 </html>
-
