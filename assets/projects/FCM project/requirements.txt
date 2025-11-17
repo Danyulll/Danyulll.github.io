@@ -1,0 +1,15 @@
+# Requirements for running the demo notebook
+
+# Core dependencies for FuzzyPySeg package
+numpy
+scipy
+numba
+Pillow  # Note: package name is Pillow, but imported as PIL
+
+# Dependencies for the notebook visualization
+matplotlib
+
+# The FuzzyPySeg package itself
+# Install with: pip install FuzzyPySeg
+# Or if developing locally: pip install -e ..
+
