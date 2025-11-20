@@ -48,6 +48,18 @@ body {
 .portfolio-header-image {
   width: 100%;
   height: auto;
+  /* Crop options - choose one style: */
+  
+  /* Option 1: Square crop */
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  
+  /* Option 2: Circular crop (round profile picture) - uncomment to use */
+  /* border-radius: 50%; */
+  
+  /* Option 3: Custom aspect ratio (e.g., 4:3) - uncomment and modify */
+  /* aspect-ratio: 4 / 3; */
 }
 
 #portfolio-header-text-container {
