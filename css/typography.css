@@ -33,11 +33,7 @@ body {
 }
 
 .project-card-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  /* Removed line-clamp restriction to allow full text display */
 }
 
 .project-title {
